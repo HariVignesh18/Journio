@@ -18,7 +18,7 @@ module.exports.showCampground = async (req, res) => {
         }
     }).populate('author');
     if (!campground) {
-        req.flash('error', 'Cannot find that campground!');
+        req.flash('error', 'Cannot find that destination!');
         return res.redirect('/campground');
     }
     res.render('campground/show', { campground });
@@ -29,15 +29,14 @@ module.exports.newCampground = async (req, res,next) => {
     campground.images = req.files.map(f => ({ url: f.path, filename: f.filename }));
     campground.author = req.user._id;
     await campground.save();
-    console.log("We got it?",campground);
-    req.flash('success', 'Successfully created a new Campground!');
+    req.flash('success', 'Your new spot has been added!');
     res.redirect('/campground');
 }
 
 module.exports.editCampground = async (req, res, next) => {
     const campground = await Campground.findById(req.params.id)
     if (!campground) {
-        req.flash('error', 'Cannot find that campground!');
+        req.flash('error', 'Cannot find that spot!');
         return res.redirect('/campground');
     }
     res.render('campground/edit', { campground });
@@ -61,6 +60,6 @@ module.exports.updateCampground = async (req, res) => {
 module.exports.deleteCampground = async (req, res) => {
     const { id } = req.params;
     await Campground.findByIdAndDelete(id);
-    req.flash('success', 'Successfully deleted a campground!');
+    req.flash('success', 'Successfully deleted a spot!');
     res.redirect('/campground');
 }

@@ -1,6 +1,4 @@
-if (process.env.NODE_ENV !== "production") {
-    require('dotenv').config();
-}
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const ejsMate = require('ejs-mate');
@@ -24,7 +22,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.engine('ejs', ejsMate);
 
-// 'mongodb://localhost:27017/yelp-camp'
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true

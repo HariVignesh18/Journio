@@ -1,4 +1,3 @@
-// filepath: c:\Users\hariv\OneDrive\Documents\Web\NodeJS\YelpCamp\cloudinary.js
 const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 
@@ -11,7 +10,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary,
   params: {
-    folder: 'YelpCamp',
+    folder: 'Journio',
     allowed_formats: ['jpeg', 'png', 'jpg']
   }
 });
