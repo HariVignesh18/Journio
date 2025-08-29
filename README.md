@@ -49,16 +49,30 @@ Built with **Node.js, Express.js, MongoDB, EJS, and Passport.js**, the platform 
 ## 📂 Project Structure
 
 ```
-Journio/
-│── public/          # Static assets (CSS, JS, images)
-│── views/           # EJS templates
-│── routes/          # Express routes
-│── models/          # MongoDB schemas
-│── config/          # Passport & database configs
-│── uploads/         # Temporary image uploads
-│── app.js           # Main server file
-│── package.json     # Dependencies
-└── README.md        # Documentation
+JOURNIO/
+├── cloudinary/ # Cloudinary configuration
+├── controllers/ # Controllers for handling logic
+├── models/ # Mongoose models
+├── node_modules/
+├── public/
+│ ├── images/ # Static images
+│ ├── javascripts/ # Frontend JS files
+│ └── stylesheets/ # CSS files
+├── routes/ # Express routes
+├── utils/ # Utility functions
+├── views/
+│ ├── campground/ # Destination pages
+│ ├── layouts/ # Layout templates
+│ ├── partials/ # Reusable components
+│ ├── users/ # User-related pages
+│ ├── error.ejs # Error page
+│ └── home.ejs # Homepage
+├── app.js # Main server file
+├── middleware.js # Custom middleware
+├── schemas.js # Validation schemas
+├── package.json # Project metadata & dependencies
+├── vercel.json # Vercel deployment config
+└── README.md # Project documentation
 ```
 
 ---
@@ -119,6 +133,6 @@ Contributions are welcome!
 
 **Author:** Hari Vignesh B
 📩 Email: harivignesh526@gmail.com  
-🌐 Portfolio: [\[Your Portfolio Link\]](https://harivignesh18.github.io/Portfolio/)
+🌐 Portfolio: [\[Portfolio\]](https://harivignesh18.github.io/Portfolio/)
 
 ---
