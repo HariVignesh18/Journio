@@ -1,104 +1,124 @@
-🌍 Journio – Travel Blogging & Destination Sharing Platform ✈️
 
+# 🌍 Journio – Travel Blogging & Destination Sharing Platform ✈️
 
+![Status](https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge)
+![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![ExpressJS](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![PassportJS](https://img.shields.io/badge/Passport.js-34E27A?style=for-the-badge&logo=passport&logoColor=black)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel&logoColor=white)
 
+🔗 **Live Demo:** [Journio Web App](https://journio-six.vercel.app/)
 
+---
 
+## 📖 Overview
 
+**Journio** is a **full-stack travel blogging platform** where users can **explore destinations**, **share experiences**, **upload images**, and **interact with other travelers**.  
+Built with **Node.js, Express.js, MongoDB, EJS, and Passport.js**, the platform delivers a **smooth, responsive, and secure user experience**.
 
+---
 
+## 🚀 Features
 
+✅ Browse & explore travel destinations  
+✅ Create, edit, and delete travel posts  
+✅ Upload images with **Cloudinary integration**  
+✅ **Secure authentication** using **Passport.js**  
+✅ Comment on other users’ posts  
+✅ **Responsive design** built with **EJS + Bootstrap**  
+✅ Deployed on **Vercel** for fast performance & scalability  
 
+---
 
+## 🛠 Tech Stack
 
+| **Category**       | **Technologies Used** |
+|--------------------|------------------------|
+**Frontend**        | EJS, Bootstrap, JavaScript  
+**Backend**         | Node.js, Express.js  
+**Database**        | MongoDB  
+**Authentication**  | Passport.js  
+**Image Hosting**   | Cloudinary  
+**Deployment**      | Vercel  
+**Version Control** | Git, GitHub  
 
+---
 
-Live Demo → 🔗 [Journio Web App](https://journio-six.vercel.app/)
+## 📂 Project Structure
 
-📖 Overview
-
-Journio is a full-stack travel blogging platform where users can explore destinations, share experiences, upload images, and interact with other travelers.
-Built with Node.js, Express.js, MongoDB, EJS, and Passport.js, Journio provides a seamless and responsive user experience with secure authentication and cloud-hosted images.
-
-🚀 Features
-
-✅ Browse and explore travel destinations
-✅ Add, update, and delete travel posts
-✅ Upload destination images using Cloudinary
-✅ Secure authentication & session management (Passport.js)
-✅ Comment and engage with other users' posts
-✅ Fully responsive UI using EJS + Bootstrap
-✅ Deployed on Vercel for fast and scalable hosting
-
-🛠 Tech Stack
-Category	Technologies Used
-Frontend	EJS, Bootstrap, JavaScript
-Backend	Node.js, Express.js
-Database	MongoDB
-Authentication	Passport.js
-Cloud Storage	Cloudinary
-Deployment	Vercel
-Version Control	Git, GitHub
-📂 Project Structure
+```
 Journio/
-│── public/          # Static files (CSS, JS, images)
+│── public/          # Static assets (CSS, JS, images)
 │── views/           # EJS templates
 │── routes/          # Express routes
 │── models/          # MongoDB schemas
-│── config/          # Passport & DB configs
+│── config/          # Passport & database configs
 │── uploads/         # Temporary image uploads
 │── app.js           # Main server file
-│── package.json     # Project dependencies
+│── package.json     # Dependencies
 └── README.md        # Documentation
+```
 
-⚡ Getting Started
-1. Clone the repository
-git clone https://github.com/your-username/journio.git
+---
+
+## ⚡ Getting Started
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/HariVignesh18/journio.git
 cd journio
+```
 
-2. Install dependencies
+### 2️⃣ Install dependencies
+```bash
 npm install
+```
 
-3. Configure environment variables
+### 3️⃣ Configure environment variables  
+Create a `.env` file in the root directory:
 
-Create a .env file in the root directory:
-
+```env
 PORT=3000
 MONGO_URI=your_mongodb_connection
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 SESSION_SECRET=your_secret
+```
 
-4. Start the application
-node app.js
+### 4️⃣ Start the application
+```bash
+nodemon app.js
+```
+App runs at: **http://localhost:3000**
+
+---
+
+## 🌐 Deployment
+
+The project is deployed on **Vercel** →  
+🔗 [https://journio-six.vercel.app/](https://journio-six.vercel.app/)
+
+---
 
 
-App runs at: http://localhost:3000
+## 🤝 Contributing
 
-🌐 Deployment
+Contributions are welcome!  
+1. **Fork** the repository  
+2. Create a **new branch**  
+3. **Commit** your changes  
+4. **Push** to the branch  
+5. Open a **Pull Request**
 
-The project is live on Vercel:
-🔗 https://journio-six.vercel.app/
+---
 
+## 📧 Contact
 
-🤝 Contributing
+**Author:** Hari Vignesh B
+📩 Email: harivignesh526@gmail.com  
+🌐 Portfolio: [\[Your Portfolio Link\]](https://harivignesh18.github.io/Portfolio/)
 
-We welcome contributions!
-
-Fork the repo
-
-Create your feature branch (git checkout -b feature-name)
-
-Commit your changes (git commit -m "Add feature")
-
-Push to the branch (git push origin feature-name)
-
-Create a Pull Request
-
-📧 Contact
-
-Author: Hari Vignesh B
-📧 Email: harivignesh526@gmail.com
-
-🌐 Portfolio: https://harivignesh18.github.io/Portfolio/
+---
